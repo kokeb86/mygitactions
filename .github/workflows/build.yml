@@ -33,7 +33,7 @@ jobs:
       #working-directory: app
 
   build:
-    #needs: test
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
