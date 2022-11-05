@@ -13,7 +13,7 @@ docker rm octochat > /dev/null 2>&1
 echo "Running. To stop:\ndocker stop --time 0 octochat"
 
 # Run the container
-container=$( docker run octochat \
+container=$( docker run --octochat \
   -p $port:8080 \
   --detach \
   --mount type=bind,source="$(pwd)"/app/key.json,target=/app/key.json \
